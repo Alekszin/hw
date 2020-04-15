@@ -1,5 +1,6 @@
-Feature:  test
+Feature:  users should be able to create accounts
 
   @test
   Scenario: test
-    Given user John creates an account
+    Given user creates an account
+    And user should be logged in

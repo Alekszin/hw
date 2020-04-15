@@ -14,7 +14,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 import java.time.Duration;
 import java.util.Collections;
 import java.util.List;
@@ -23,7 +22,8 @@ import java.util.concurrent.Callable;
 
 import static java.time.Duration.ofSeconds;
 import static org.awaitility.Awaitility.await;
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
 
 public class AbstractScreen {
 
@@ -143,5 +143,4 @@ public class AbstractScreen {
         }
         return driver.findElements(by);
     }
-
 }
