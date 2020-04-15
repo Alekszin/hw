@@ -1,6 +1,6 @@
 package stepDefs;
 
-import io.cucumber.java.en.Given;
+import cucumber.api.java.en.Given;
 import steps.OnboardingSteps;
 
 public class RegistrationStepdefs {
@@ -15,11 +15,4 @@ public class RegistrationStepdefs {
     public void userJohnCreatesAnAccount() {
         onboardingSteps.skipOnboarding();
     }
-
-    @cucumber.api.java.en.Given("user John creates an account")
-    public void userJohndCreatesAnAccount() {
-        onboardingSteps.skipOnboarding();
-
-    }
 }
-

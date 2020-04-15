@@ -1,7 +1,8 @@
 package config;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -9,6 +10,6 @@ import org.junit.runner.RunWith;
         tags = {"@test"},
         plugin = {"json:build/report/cucumber.json"},
         features = {"src/main/resources/features"},
-        glue = "src/main/java/stepDefs")
+        glue = "stepDefs")
 public class TestRunner {
 }

@@ -15,6 +15,10 @@ public class driver {
 
     private AndroidDriver driver;
 
+    public driver(AndroidDriver driver) {
+        this.driver = driver;
+    }
+
 
     @Before
     public void setUp() throws Exception {
