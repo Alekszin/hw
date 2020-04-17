@@ -3,21 +3,17 @@ package steps;
 import helpers.RandomGenerator;
 import helpers.Users;
 import io.appium.java_client.MobileElement;
+import lombok.AllArgsConstructor;
 import screens.RegistrationScreen;
 
 import java.util.NoSuchElementException;
 
+@AllArgsConstructor
 public class RegistrationSteps {
 
     private RegistrationScreen registrationScreen;
     private Users users;
     private RandomGenerator randomGenerator;
-
-    public RegistrationSteps(RegistrationScreen registrationScreen, Users users, RandomGenerator randomGenerator) {
-        this.registrationScreen = registrationScreen;
-        this.users = users;
-        this.randomGenerator = randomGenerator;
-    }
 
 
     public void register() {

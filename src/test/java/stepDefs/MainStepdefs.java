@@ -1,17 +1,14 @@
 package stepDefs;
 
-import cucumber.api.java.en.And;
+import lombok.AllArgsConstructor;
 import org.junit.Assert;
 import steps.MainSteps;
 
 
+@AllArgsConstructor
 public class MainStepdefs {
 
     private MainSteps mainSteps;
-
-    public MainStepdefs(MainSteps mainSteps) {
-        this.mainSteps = mainSteps;
-    }
 
     @And("user should be logged in")
     public void userJohnShouldBeLoggedIn(String fullname) {

@@ -1,6 +1,5 @@
 package stepDefs;
 
-import cucumber.api.java.en.Given;
 import steps.OnboardingSteps;
 import steps.RegistrationSteps;
 
