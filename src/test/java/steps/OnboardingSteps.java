@@ -1,19 +1,16 @@
 package steps;
 
+import lombok.AllArgsConstructor;
 import screens.OnboardingScreen;
 import screens.RegistrationScreen;
 
 import java.util.stream.IntStream;
 
+@AllArgsConstructor
 public class OnboardingSteps {
 
     private OnboardingScreen onboardingScreen;
     private RegistrationScreen registrationScreen;
-
-    public OnboardingSteps(OnboardingScreen onboardingScreen, RegistrationScreen registrationScreen) {
-        this.onboardingScreen = onboardingScreen;
-        this.registrationScreen = registrationScreen;
-    }
 
     public void skipOnboarding() {
 

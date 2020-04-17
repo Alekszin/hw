@@ -1,5 +1,6 @@
 package stepDefs;
 
+import io.cucumber.java.en.And;
 import lombok.AllArgsConstructor;
 import org.junit.Assert;
 import steps.MainSteps;
